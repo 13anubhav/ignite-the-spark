@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ask Her Out</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <div class="custom-btn btn-12" onclick="toggleAudio()">
+        <span id="playState">Play Music</span>
+    </div>
+
+    <div class="tenor-gif-embed" data-postid="15974530976611222074" data-share-method="host" data-aspect-ratio="1.26923" data-width="100%">
+        <a href="https://tenor.com/view/peach-goma-phone-gif-15974530976611222074">Peach Goma Phone Sticker</a> from
+        <a href="https://tenor.com/search/peach+goma-stickers">Peach Goma Stickers</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <h1>Manja na! Kitna bhav khaegi 😭</h1>
+
+    <p>Face Book sa face hai Tera, Google search si aakhe </p>
+    <!-- <p>Google search si aakhe</p> -->
+    <p>Enter kar ke Search kare toh, bas Tughko hi Taake </p>
+    <!-- <p>bas Tughko hi Taake</p> -->
+
+    <p>Reddis se gaal hai Tere, Snap chat se hooth</p>
+    <!-- <p>Snap chat se hooth</p> -->
+    <p>balkha kar jab chalti hai toh, lage Jiya ko Choot </p>
+    <!-- <p>lage Jiya ko Choot</p> -->
+
+    <p>Instagfram pe Dekh ke DP, Hum toh aisa Khoye</p>
+    <!-- <p>Hum toh aisa Khoye</p> -->
+    <p>Tum Toh Ho gayi paas, Apna hoga Moye Moye</p>
+    <!-- <p>Apna hoga Moye Moye</p> -->
+
+    <div class="btn">
+        <a href="itsyes.html"  style="background-color: #ffb6c1;">Yes</a>
+        <a href="#" id="move-random" style="background-color: #c7c7c7;">No</a>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+<audio id="myAudio" src="tumse.mp3"></audio>
+<script>
+    var audio = document.getElementById("myAudio");
+    var playState = document.getElementById("playState");
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            playState.textContent = "Pause Music";
+        } else {
+            audio.pause();
+            playState.textContent = "Play Music";
+        }
+    }
+</script>
+
+<style>
+
+.arrow-buttons {
+  text-align: center;
+}
+
+.arrow-buttons a {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.arrow-buttons a:hover {
+  color: #007bff;
+}
+
+     .custom-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:  rgb(55, 142, 177); /* Green */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-color:  rgb(15, 161, 218); /* Darker Green */
+}
+
+.custom-btn:active {
+  background-color:  rgb(4, 184, 255); /* Slightly darker when clicked */
+}
+
+.custom-btn span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.custom-btn.playing {
+  background-color: #e74c3c; /* Red */
+}
+
+.custom-btn.playing:hover {
+  background-color: #c0392b; /* Darker Red */
+}
+
+</style>
+</body>
+</html>
